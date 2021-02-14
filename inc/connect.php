@@ -6,5 +6,5 @@ $pdo = new PDO('mysql:host=localhost;dbname=smurf', 'root', '', array(PDO::ATTR_
 session_start();
 
 // pour la gestion des liens, on déclare une constante contenant le chemin absolu du projet
-define('URL', 'http://localhost/projet/');
+define('URL', 'https://pierre-antoinebaizeau.github.io/smurf/');
 
