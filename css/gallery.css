@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;  
+
+}
+
+h1 {
+    padding-top: 50px;
+    padding-bottom: 50PX;
+    text-align: center;
+    text-decoration: underline grey;
+
+}
+
+.principalimage{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border: 2px solid #000;
+}
+
+section .slide {
+    position: relative;
+    background: #0f0;
+    height: 100%;
+    flex: 1;
+    border-right: 2px solid #000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+section .slide:nth-child(1) {
+    background: url(../images/smurf1.jpg);
+    background-size: 100vh;
+    background-position: top ;
+}
+
+section .slide:nth-child(2) {
+    background: url(../images/smurf2.jpg);
+    background-size: 100vh;
+    background-position: top ;
+}
+
+section .slide:nth-child(3) {
+    background: url(../images/smurf3.jpg);
+    background-size: 100vh;
+    background-position: center top;
+}
+
+section .slide:nth-child(4) {
+    background: url(../images/smurf4.png);
+    background-size: 100vh;
+    background-position: center center;
+}
+
+section .slide:nth-child(5) {
+    background: url(../images/smurf5.jpg);
+    background-size: 100vh;
+    background-position: center top;
+    
+}
+
+
+section .slide:last-child {
+    border-right: none;
+}
+
+section .slide:hover {
+    flex-grow:3;
+}
+
+section .slide .content {
+    position: absolute;
+    bottom: 0;
+    margin: 40px;
+    padding: 30px;
+    background: #000;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s;
+    transform: translateY(100px);
+}
+
+section .slide:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+    
+}
+
+
+
+
+ 
+.image {
+	opacity: 1;
+	display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+	transition: .5s ease;
+  backface-visibility: hidden;
+  margin: auto;
+  }
+  
+  .container:hover .image {
+	opacity: 0.3;
+  }
+  
+  .responsive {
+	float: left;
+  width: 24.99999%;
+  height: 300px;
+	position: relative;
+	left: 9%;
+	top: 150px;
+	margin-right:3%;
+  margin-bottom: 50px;
+}
+
+  
+  @media only screen and (max-width: 700px) {
+	.responsive {
+	  width: 40%;
+	  margin: 6px 1.5%;
+	  left: 5%;
+	}
+	.navMenu li a {
+		font-size: 16px;
+	}
+  }
+  
+  @media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 90%;
+	  left: 5%;
+	}
+	.navMenu li a {
+		font-size: 13px;
+	}
+  }
+
+
+
+
+
+
+  nav {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #335a99;
+  }
+  
+  
+  .fermeButon {
+    color: rgb(14, 20, 27);
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    cursor: pointer;
+  }
+  
+  .nav-icon {
+    margin: 1em;
+    width: 40px;
+    position: fixed;
+    z-index: 100;
+    top: 10px;
+    right: 30px;
+    }
+    
+    .nav-icon:after, 
+    .nav-icon:before, 
+    .nav-icon div {
+    background-color: rgb(14, 20, 27);
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+    
+    }
+  
+    .nav-icon:hover:before {
+    transform: translateY(12px) rotate(135deg);
+    }
+    
+    .nav-icon:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+    }
+    
+    .nav-icon:hover div {
+    transform: scale(0);
+    }
+  
+  .navMenu{
+    flex-flow: column wrap; /* flex-flow = flex-direction + flex-wrap*/
+  }
+  
+  
+  .navMenu li {
+    list-style: none;
+  }
+  
+  
+  .navMenu li a {
+    color: rgb(14, 20, 27);
+    text-decoration: none;
+    font-size: 55px;
+    display: inline-block;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fc3c3c;
+    transition: 0.2 ease all;
+  }
+  
+  
+  .navMenu li:last-child a{
+    border-bottom: none;
+  }
+  
+  .navMenu li:hover a{
+    background-color: #ff0000;
+  }
+  
+
+  #banniere {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 50px;
+    position: fixed;
+    z-index: 100;
+  }
+
+  
+.scrollbar{
+	overflow: auto;
+	direction: rtl;
+	height: 400px;
+	margin-left: 155px;
+	padding-left: 10px;
+	padding-right: 45%;
+	margin-top: 25px;
+}
+.scrollbar::-webkit-scrollbar {
+	width: 8px;
+  }
+
+::-webkit-scrollbar {
+    border: 5px; 
+}
+
+ ::-webkit-scrollbar-track-piece {
+	background: #f1f1f1;
+	border-radius: 5px;
+ } 
+  
+  
+  ::-webkit-scrollbar-thumb {
+	background: rgb(78, 154, 229);
+	border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(0, 100, 146);
+  }

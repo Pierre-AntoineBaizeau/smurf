@@ -1,0 +1,166 @@
+
+.divhaut {
+	background-color: rgb(78, 154, 229);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 15%;
+  position: fixed;
+	top: 0;
+	z-index: 100;
+	text-align: center;
+}
+
+.boutonapropos {
+	background-color: #3670aa;
+	padding: 17px 27px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	top: 40px;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+.act {
+	margin-left: 5%;
+}
+
+@media screen and (max-width:1000px){
+   .boutonapropos{
+		display: none;
+	}
+	
+	.divhaut {
+		display: none;
+	}
+}
+.navdab {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #335a99;
+    margin-top: -10px;
+  }
+  
+  
+  .fermeButon {
+    color: rgb(14, 20, 27);
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    cursor: pointer;
+  }
+  
+  .nav-icon {
+    margin: 1em;
+    width: 40px;
+    position: fixed;
+    z-index: 100;
+    top: 10px;
+    right: 30px;
+    }
+    
+    .nav-icon:after, 
+    .nav-icon:before, 
+    .nav-icon div {
+    background-color: rgb(14, 20, 27);
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+    
+    }
+  
+    .nav-icon:hover:before {
+    transform: translateY(12px) rotate(135deg);
+    }
+    
+    .nav-icon:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+    }
+    
+    .nav-icon:hover div {
+    transform: scale(0);
+    }
+  
+  .navMenu{
+    flex-flow: column wrap; /* flex-flow = flex-direction + flex-wrap*/
+  }
+  
+  
+  .navMenu li {
+    list-style: none;
+  }
+  
+  
+  .navMenu li a {
+    color: rgb(14, 20, 27);
+    text-decoration: none;
+    font-size: 55px;
+    display: inline-block;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fc3c3c;
+    transition: 0.2 ease all;
+  }
+  
+  
+  .navMenu li:last-child a{
+    border-bottom: none;
+  }
+  
+  .navMenu li:hover a{
+    background-color: #ff0000;
+  }
+  
+
+  #banniere {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 50px;
+    position: fixed;
+    z-index: 100;
+  }
+
+
+  
+
+  ::-webkit-scrollbar {
+    border: 5px; 
+}
+
+ ::-webkit-scrollbar-track-piece {
+	background: #f1f1f1;
+	border-radius: 5px;
+ } 
+  
+  
+  ::-webkit-scrollbar-thumb {
+	background: rgb(78, 154, 229);
+	border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(0, 100, 146);
+  }
+
